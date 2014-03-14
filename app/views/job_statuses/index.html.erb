@@ -1,0 +1,3 @@
+<% @jobs.each do |job| %>
+	<div><%= job.to_json %>, <%= link_to("show", job) %></div>
+<% end %>
