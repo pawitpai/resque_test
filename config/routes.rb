@@ -1,4 +1,9 @@
 ResqueTest::Application.routes.draw do
+  resources "cookies", only: [] do
+    member do 
+      get "eat"
+    end
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
